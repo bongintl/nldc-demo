@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Typ1451';
+  font-weight: normal;
+  src: url(./fonts/TondoCorp-Bold.ttf); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Typ1451', sans-serif;
+  background: white; }
+
+.sidebar {
+  background: #007cff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  padding: .75rem;
+  color: white;
+  font-size: 3em; }
+  .sidebar__content {
+    color: black;
+    opacity: 1; }
+    .sidebar__content_hidden {
+      opacity: 0;
+      color: red; }
+  .sidebar__end {
+    opacity: 0;
+    white-space: nowrap; }
+  .sidebar__dc {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: .25em;
+    white-space: nowrap; }
+  .sidebar__dc:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: white;
+    width: 0.1em;
+    height: 1em;
+    top: .1em;
+    left: -.25em;
+    border-radius: 0.05em;
+    -webkit-transition: width .08s, left .08s;
+    transition: width .08s, left .08s;
+    -webkit-animation: flash 1s linear infinite;
+            animation: flash 1s linear infinite; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  51% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  51% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
